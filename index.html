@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SKU Access</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Source Access</title>
   <style>
     :root {
       --bg: #050b1a;
       --card: #0b1533;
-      --blue: #1e90ff;
-      --blue-glow: rgba(30, 144, 255, 0.5);
+      --blue: #00aaff;           /* Sky Blue */
+      --blue-glow: rgba(0,170,255,0.5);
       --text: #e5ecff;
       --muted: #9fb3ff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      margin: 0;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background:
         radial-gradient(circle at top, #0a1e4f, transparent 60%),
         var(--bg);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 20px;
     }
 
@@ -39,17 +35,17 @@
       background: linear-gradient(180deg, #0e1d44, var(--card));
       border-radius: 20px;
       padding: 32px;
+      text-align: center;
       box-shadow:
         0 0 40px var(--blue-glow),
         inset 0 0 0 1px rgba(255,255,255,0.05);
-      text-align: center;
     }
 
     .badge {
       display: inline-block;
       padding: 6px 14px;
       border-radius: 999px;
-      background: rgba(30,144,255,0.15);
+      background: rgba(0,170,255,0.15);
       color: var(--blue);
       font-weight: 600;
       font-size: 13px;
@@ -77,10 +73,10 @@
       text-decoration: none;
       padding: 14px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #1e90ff, #2563eb);
+      background: linear-gradient(135deg, #00aaff, #339cff);
       color: white;
       font-weight: 600;
-      box-shadow: 0 10px 25px rgba(30,144,255,0.35);
+      box-shadow: 0 10px 25px rgba(0,170,255,0.35);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
@@ -92,7 +88,7 @@
 
     .link:hover {
       transform: translateY(-2px);
-      box-shadow: 0 15px 30px rgba(30,144,255,0.5);
+      box-shadow: 0 15px 30px rgba(0,170,255,0.5);
     }
 
     footer {
@@ -106,31 +102,29 @@
 <body>
 
   <div class="card">
-    <div class="badge">SKU ACCESS</div>
+    <div class="badge">Sky Blue Access</div>
 
     <h1>Buy Source Access</h1>
     <p>
-      Premium tools, private sources, and exclusive access.
+      Premium tools, private sources, and exclusive access.  
       Fast, secure, and trusted.
     </p>
 
     <div class="links">
-      <!-- CHANGE LINKS HERE -->
-      <a class="link" href="https://your-link-here.com" target="_blank">
+      <!-- CHANGE THESE LINKS -->
+      <a class="link" href="https://your-first-link.com" target="_blank">
         Get Access
       </a>
-
-      <a class="link secondary" href="https://your-discord-link.com" target="_blank">
+      <a class="link secondary" href="https://your-second-link.com" target="_blank">
         Join Discord
       </a>
-
-      <a class="link secondary" href="https://your-telegram-link.com" target="_blank">
+      <a class="link secondary" href="https://your-third-link.com" target="_blank">
         Contact Support
       </a>
     </div>
 
     <footer>
-      © 2026 SKU • All rights reserved
+      © 2026 Sky Blue • All rights reserved
     </footer>
   </div>
 
