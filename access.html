@@ -47,13 +47,20 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-}
+.card:hover { transform: translateY(-3px); }
 
 .card h2 {
   font-size:22px;
-  margin-bottom:12px;
+  margin-bottom:6px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.card h2 span.price {
+  font-size:18px;
+  color: var(--blue);
+  font-weight:600;
 }
 
 .card p {
@@ -101,25 +108,25 @@ footer {
 <h1>Choose Your Source Plan</h1>
 
 <div class="card">
-  <h2>1 Day Source</h2>
+  <h2>1 Day Source <span class="price">50 rbx</span></h2>
   <p>Good for exploring the tools and testing features.</p>
   <a class="buy-button" href="https://your-1day-buy-link.com" target="_blank">Buy 1 Day</a>
 </div>
 
 <div class="card">
-  <h2>1 Week Source</h2>
+  <h2>1 Week Source <span class="price">100 rbx</span></h2>
   <p>Perfect for short-term use or trial of premium sources.</p>
   <a class="buy-button" href="https://your-1week-buy-link.com" target="_blank">Buy 1 Week</a>
 </div>
 
 <div class="card">
-  <h2>1 Month Source</h2>
+  <h2>1 Month Source <span class="price">400 rbx</span></h2>
   <p>Ideal for regular use with more features unlocked.</p>
   <a class="buy-button" href="https://your-1month-buy-link.com" target="_blank">Buy 1 Month</a>
 </div>
 
 <div class="card">
-  <h2>Lifetime Source</h2>
+  <h2>Lifetime Source <span class="price">900 rbx</span></h2>
   <p>Unlimited access, best for serious users and long-term usage.</p>
   <a class="buy-button" href="https://your-lifetime-buy-link.com" target="_blank">Buy Lifetime</a>
 </div>
