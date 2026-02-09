@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKU Access</title>
+
+  <style>
+    :root {
+      --bg: #050b1a;
+      --card: #0b1533;
+      --blue: #1e90ff;
+      --blue-glow: rgba(30, 144, 255, 0.5);
+      --text: #e5ecff;
+      --muted: #9fb3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, #0a1e4f, transparent 60%),
+        var(--bg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: linear-gradient(180deg, #0e1d44, var(--card));
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow:
+        0 0 40px var(--blue-glow),
+        inset 0 0 0 1px rgba(255,255,255,0.05);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(30,144,255,0.15);
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1e90ff, #2563eb);
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(30,144,255,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .link.secondary {
+      background: transparent;
+      color: var(--text);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(30,144,255,0.5);
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 12px;
+      color: #7c8cff;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge">SKU ACCESS</div>
+
+    <h1>Buy Source Access</h1>
+    <p>
+      Premium tools, private sources, and exclusive access.
+      Fast, secure, and trusted.
+    </p>
+
+    <div class="links">
+      <!-- CHANGE LINKS HERE -->
+      <a class="link" href="https://your-link-here.com" target="_blank">
+        Get Access
+      </a>
+
+      <a class="link secondary" href="https://your-discord-link.com" target="_blank">
+        Join Discord
+      </a>
+
+      <a class="link secondary" href="https://your-telegram-link.com" target="_blank">
+        Contact Support
+      </a>
+    </div>
+
+    <footer>
+      © 2026 SKU • All rights reserved
+    </footer>
+  </div>
+
+</body>
+</html>
