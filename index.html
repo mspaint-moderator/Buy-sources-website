@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buy Source Access</title>
-  <style>
-    :root {
-      --bg: #050b1a;
-      --card: #0b1533;
-      --blue: #00aaff;           /* Sky Blue */
-      --blue-glow: rgba(0,170,255,0.5);
-      --text: #e5ecff;
-      --muted: #9fb3ff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Sources Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #050b1a;
+  --card: #0b1533;
+  --blue: #00aaff; /* Sky Blue */
+  --blue-glow: rgba(0,170,255,0.5);
+  --text: #e5ecff;
+  --muted: #9fb3ff;
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+/* Reset */
+* { box-sizing: border-box; margin:0; padding:0; }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background:
-        radial-gradient(circle at top, #0a1e4f, transparent 60%),
-        var(--bg);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text);
-      padding: 20px;
-    }
+body {
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: radial-gradient(circle at top, #0a1e4f, transparent 60%), var(--bg);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  padding:20px;
+}
 
-    .card {
-      width: 100%;
-      max-width: 420px;
-      background: linear-gradient(180deg, #0e1d44, var(--card));
-      border-radius: 20px;
-      padding: 32px;
+/* Card */
+.card {
+  width:100%;
+  max-width:440px;
+  background: linear-gradient(180deg, #0e1d44, var(--card));
+  border-radius:24px;
+  padding:40px;
+  text-align:center;
+  box-shadow: 0 0 50px var(--blue-glow), inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+/* Badge */
+.badge {
+  display:inline-block;
+  padding:6px 16px;
+  border-radius:999px;
+  background: rgba(0,170,255,0.15);
+  color: var(--blue);
+  font-weight:600;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+/* Headings & text */
+h1 {
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+p {
+  font-size:15px;
+  color: var(--muted);
+  margin-bottom:32px;
+  line-height:1.5;
+}
+
+/* Buttons / links */
+.links {
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.link {
+  text-decoration:none;
+  padding:16px;
+  border-radius:14px;
+  background: linear-gradient(135deg, #00aaff, #339cff);
+  color:white;
+  font-weight:600;
+  font-size:16px;
+  box-shadow: 0 12px 28px rgba(0,170,255,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link.secondary {
+  background: transparent;
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(0,170,255,0.5);
+}
+
+/* Footer */
+footer {
+  margin-top:28px;
+  font-size:12px;
+  color:#7c8cff;
+  opacity:0.7;
+}
+
+/* Mobile adjustments */
+@media (max-width:480px){
+  .card { padding:28px; }
+  h1 { font-size:26px; }
+  .link { font-size:15px; padding:14px; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="badge">Buy Sources Website</div>
+
+  <h1>Buy Source Access</h1>
+  <p>Premium tools, private sources, and exclusive access. Fast, secure, and trusted.</p>
+
+  <div class="links">
+    <!-- Replace these links -->
+    <a class="link" href="https://your-first-link.com" target="_blank">Get Access</a>
+    <a class="link secondary" href="https://your-second-link.com" target="_blank">Join Discord</a>
+    <a class="link secondary" href="https://your-third-link.com" target="_blank">Contact Support</a>
+  </div>
+
+  <footer>© 2026 Buy Sources Website • All rights reserved</footer>
+</div>
+
+</body>
+</html>      padding: 32px;
       text-align: center;
       box-shadow:
         0 0 40px var(--blue-glow),
